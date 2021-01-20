@@ -9,8 +9,13 @@ class MyWidget extends StatelessWidget {
         Container(
           child: Text(
             'Hi there!',
-            style: TextStyle(
-              fontWeight: FontWeight.bold, fontSize: 24)),
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+          ),
+        ), 
+        Container(
+          child: Text(
+            'Can't',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
           ),
         ), 
         Expanded(child: Container(
