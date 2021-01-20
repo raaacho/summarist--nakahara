@@ -6,52 +6,52 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        SizedBox(height: 35),
+        Container(
+          child: Text(
+            'Summarist.',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
+          ),
+        ), 
+        SizedBox(height: 150),
         Container(
           child: Text(
             'Hi there!',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
           ),
         ), 
+        SizedBox(height: 20),
         Container(
           child: Text(
-            'Can't',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+            "Can't find the books you're lokking for?",
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
           ),
         ), 
-        Expanded(child: Container(
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text('Lark',
-                        style: TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 24)),
-                    Container(
-                      height: 100,
-                      width: 100,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          Icon(Icons.star),
-                          Icon(Icons.star),
-                          Icon(Icons.star_border),
-                        ],
-                      ),
-                    ),
-                  ]
-                ),
-                Expanded(child: Container(
-                  child: Text(
-                    'Larks are passerine birs of the family Alaudidae. Larks have a cosmopolitan distribution with the largest number of species occuring in Africa. Only a single species, the horned lark, occurs in North America, and only Horsfield\'s bush lark occurs in Australia. Habitats vary widely, but many spieces live in dry regions.',
-                    style: TextStyle(color: Colors.grey),
-                  ),
-                )),
-              ],
-            )
-          )
+        SizedBox(height: 30),
+        Container(
+          padding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 120),
+          child: Text(
+            'Let us know!',
+            style: TextStyle(fontSize: 12, color: Colors.white)
+          ),
+          decoration: BoxDecoration(
+            color: Colors.green,
+            borderRadius: BorderRadius.circular(10)
+          ),
         ),
+        SizedBox(height: 30),
+        Divider(
+          indent: 20,
+          endIndent: 20,
+          color: Colors.grey
+        ),
+        SizedBox(height: 60),
+        Container(
+          child: Text(
+            "Log out",
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14, color: Colors.red),
+          ),
+        ), 
       ],
     );
   }
